@@ -1,15 +1,16 @@
 package db;
 
-import com.opencsv.bean.CsvToBean;
-import com.opencsv.bean.CsvToBeanBuilder;
-import model.Category;
-
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.opencsv.bean.CsvToBean;
+import com.opencsv.bean.CsvToBeanBuilder;
+
+import model.Category;
 
 public class CategoryDB {
     private static final String CATEGORY_CSV = "src/main/resources/csv/category.csv";

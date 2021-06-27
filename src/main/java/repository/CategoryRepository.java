@@ -1,9 +1,9 @@
 package repository;
 
+import java.util.List;
+
 import db.CategoryDB;
 import model.Category;
-
-import java.util.List;
 
 public class CategoryRepository {
     CategoryDB categoryDb = new CategoryDB();

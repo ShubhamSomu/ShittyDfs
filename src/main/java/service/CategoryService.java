@@ -1,12 +1,12 @@
 package service;
 
-import model.Category;
-import repository.CategoryRepository;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
+
+import model.Category;
+import repository.CategoryRepository;
 
 public class CategoryService {
 
@@ -22,8 +22,7 @@ public class CategoryService {
         for (i = 1; i <= level; i++) {
             int finalI = i;
             List<Category> lvl1 = unsortedCategory.stream().filter(uc -> uc.getLevel() == finalI).collect(Collectors.toList());
-            System.out.println(lvl1);
-
+            //System.out.println(lvl1);
 
         }
         return sortedList;
